@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget
-    id="com.emstone.moview"
+    id="com.divisys.moview"
     version="1.3.1"
     versionCode="131"
     xmlns="http://www.w3.org/ns/widgets"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>NVR Viewer</name>
+    <name>DIVISYS NVR Viewer</name>
     <description>
 	You can view live camera images with this mobile viewer from NVR.
 
