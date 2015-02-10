@@ -1,0 +1,159 @@
+
+/* Disable user selection execpt input tags. */
+* {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+input {
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -o-user-select: text;
+  user-select: text;
+}
+
+/* Disable link touch callout.
+ * http://phonegap-tips.com/articles/essential-phonegap-css-webkit-touch-callout.html
+ */
+a {
+  -webkit-touch-callout: none;
+}
+
+/* Disable ellipsis on button text. */
+.ui-btn {
+  text-overflow: clip !important;
+}
+
+/* Scroll panel separately from the content.
+ * http://stackoverflow.com/questions/16305488/scroll-jquery-mobile-panel-separately-from-content
+ */
+.ui-panel.ui-panel-open {
+  position: fixed;
+}
+.ui-panel-inner {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Increase the size of icon buttons in the header. */
+.ui-header .ui-btn-icon-notext {
+  padding: .2em .2em;
+}
+
+/* Decrease gap between blocks in the grid. */
+.ui-grid-nogap [class*=ui-block-]>.ui-btn {
+  margin: .1em;
+  padding: .7em .1em;
+}
+
+/* Show visible camera groups in different style. */
+.ui-btn-camera-visible {
+  color: #ffce00 !important;
+}
+
+/* Set the position of device snapshot image. */
+.device-list-item img {
+  position: absolute;
+  width: 120px;
+  height: 65px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  padding: .2em .2em;
+}
+
+/* Set auto change line. */
+.ptz-inline-block {
+  display: inline-block;
+}
+
+.ui-controlgroup {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  margin: 0;
+}
+
+/* Set the round coner by custom style. */
+.ptz-top-radious {
+  -webkit-border-top-left-radius: .3125em;
+  -webkit-border-top-right-radius: .3125em;
+  border-top-left-radius: .3125em;
+  border-top-right-radius: .3125em;
+}
+.ptz-bottom-radious {
+  -webkit-border-bottom-left-radius: .3125em;
+  -webkit-border-bottom-right-radius: .3125em;
+  border-bottom-left-radius: .3125em;
+  border-bottom-right-radius: .3125em;
+}
+.ptz-top-right-radious {
+  -webkit-border-top-right-radius: .3125em;
+  border-top-right-radius: .3125em;
+}
+
+/* Set size of ptz title button. */
+.ptz-name-fixed {
+  margin: 0;
+  padding: .7em .1em !important;
+  width: 53px !important;
+}
+
+/* Set size of ptz button. */
+.ptz-button-padding {
+  margin: 0;
+  padding: .7em .7em !important;
+}
+
+/* Set round header icon. */
+.header-icon-corner-all {
+  padding: 0.7em 0.9em;
+  border-radius: 2em !important;
+}
+
+/* Set icon */
+.ui-icon-ptz:after {
+  background-image: url("../images/ptz.png");
+}
+
+/* Remove the margin and padding of image live content. */
+#image-live-content {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the background color of image live page. */
+#image-live-page,
+#image-live-content,
+#image-live-canvas {
+  background-color: #000010;
+}
+
+/* Image Live Title */
+#image-live-panel-title {
+  color: #ffce00 !important;
+}
+
+/* Apply speed of page transition animation. */
+.in,
+.out {
+  -webkit-animation-duration: 200ms !important;
+}
+
+#image-live-ptz {
+  text-align: center;
+}
+
+/* Set show three figures to preset number */
+#ptz-preset-select-button {
+  padding-left: .5em;
+  padding-right: 2em;
+}
